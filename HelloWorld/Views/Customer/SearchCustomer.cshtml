@@ -1,0 +1,28 @@
+﻿@model HelloWorld.ViewModel.CustomerViewModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>SearchCustomer</title>
+</head>
+<body>
+    <div>
+        <form action="SearchCustomer" method="post">
+            Enter Customer Name: <input type="text" name="txtCustomerName" />
+            <br />
+            <input type="submit" value="Search Customer" />
+        </form>
+    </div>
+
+    @Html.Partial("DisplayCustomer", Model)
+
+    <br />
+
+</body>
+</html>
